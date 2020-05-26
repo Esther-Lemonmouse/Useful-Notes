@@ -1,0 +1,13 @@
+git里中文乱码这问题实在是太麻烦了，好不容易把问题解决了（可能还不一定真的解决了），索性做下笔记好了。。。
+
+步骤：
+1.	首先养成用UTF-8编码汉字的习惯；
+2.	把平时写代码的编辑器全调成UTF-8的encoding；
+3.	git做两行设置：
+	git config --global i18n.commitencoding utf-8
+	git config --global i18n.logoutputencoding utf-8
+4.	git bash右键把语言调成zh-CN和UTF-8
+
+虽然中文的提示语句会变成火星文，但是commit message和中文文件名似乎就可以正确保存并且同步到github了。。。
+
+累。。。。。。看将来是否需要补充了
