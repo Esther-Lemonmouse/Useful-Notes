@@ -6,3 +6,7 @@ git remote
 
 查看本地设置
 git config -l
+
+删除本地仓库
+在本地仓库根目录下使用ls -a 发现 .git文件夹
+再使用rm -rf .git删除本地仓库
