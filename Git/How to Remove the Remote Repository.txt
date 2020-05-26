@@ -1,0 +1,2 @@
+git bash下本地库命令：
+git remote rm <远程库在本地的名字>
