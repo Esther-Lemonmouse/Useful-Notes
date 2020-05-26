@@ -1,0 +1,8 @@
+查看本地仓库与远程关联情况
+git remote -v
+
+查看本地仓库名字
+git remote
+
+查看本地设置
+git config -l
