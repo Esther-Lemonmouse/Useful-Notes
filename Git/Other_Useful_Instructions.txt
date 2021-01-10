@@ -16,3 +16,6 @@ git config --global
 
 删除git设置
 git config --unset xx
+
+将本地更改推送到GitHub远程关联仓库
+git push origin master
