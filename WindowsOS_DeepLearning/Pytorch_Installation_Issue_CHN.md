@@ -14,3 +14,16 @@ pip记得用Linux操作系统。
         print(torch.__version__)
     ```
     如果导入成功就说明已经安好辣~撒花！
+
+4. 番外篇：如何临时使用镜像源 (conda+pip)
+    **conda篇**
+    ```
+    conda config --add channels [YOUR_CHANNEL_URL]
+    ```
+    临时将镜像源加入到conda设置中，下载安装包完毕后，打开 _C:\Users\\[USERNAME]_ 路径下的 _.condarc_ 文件，并删除多余的临时镜像源。
+
+    **pip篇**
+    ```
+    pip install [PACKAGE_NAME] -i [url]
+    ```
+    可通过指定镜像源安装对应包
