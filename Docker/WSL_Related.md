@@ -11,12 +11,15 @@
 
     3. [Docker 文档：将 Docker Desktop 与 WSL 2 配合使用的最佳做法](https://docs.docker.com/desktop/windows/wsl/#gpu-support)
     按照上述文档说明运行完简短测试 (建议在WSL虚拟机中运行)。控制台打印出的信息会与文档中的类似。
+    其他信息也可参考<https://developer.nvidia.com/cuda/wsl>
 
     4. 安装nvidia-docker
     + NGC有提供比较完备的image，高度集成。<https://catalog.ngc.nvidia.com/containers>
     + (自用方法) 使用Docker Hub上由NVIDIA发布的image+Dockerfile(还没写出来)生成新的container。<https://hub.docker.com/>
     **Tips:** 注意在生成容器时使用关键字`--gpus all`，否则前面所做的一切都白搭 ~~by删了不知道多少号的菜鸡~~
+    关于nvidia-docker的其他信息，可参照 [相关GitHub](https://github.com/NVIDIA/nvidia-docker)。
 
     5. 在生成好的container bash中运行nvidia-smi，如果有正确输出则代表大功告成，可以安心享受深度学习开发环境啦~
 
-## 一个Pytorch开发环境的示例（待续）
+## 一个Pytorch开发环境的示例
+请参阅[花了一周才彻底搭好的Swin环境](../../myDocker/Swin-Transformer/README.md)。
