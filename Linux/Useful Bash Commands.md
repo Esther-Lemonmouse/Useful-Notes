@@ -54,3 +54,10 @@ nice -n VALUE COMMAND
 ```bash
 top
 ```
+
++ 添加Ubuntu系统的中文支持
+```bash
+apt install x11-apps
+apt install locales xfonts-intl-chinese fonts-wqy-microhei
+# 后面好像还有别的步骤，我就不写了，到时候查吧，反正这么搞完Ubuntu就能识别中文了
+```
