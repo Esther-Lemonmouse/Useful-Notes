@@ -53,6 +53,8 @@ nice -n VALUE COMMAND
 + 查看硬盘进程优先级
 ```bash
 top
+# 增强版命令
+htop
 ```
 
 + 添加Ubuntu系统的中文支持
@@ -60,4 +62,12 @@ top
 apt install x11-apps
 apt install locales xfonts-intl-chinese fonts-wqy-microhei
 # 后面好像还有别的步骤，我就不写了，到时候查吧，反正这么搞完Ubuntu就能识别中文了
+# 不重要，因为现在安装的时候就能选中文了
+```
+
++ ~~换了oh my zsh以后，本文档可以停止更新了(x)~~
+
++ 查看系统的交换内存状态
+```bash
+swapon --show
 ```
